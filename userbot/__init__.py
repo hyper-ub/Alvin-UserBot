@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 from requests import get
 from telethon.sync import TelegramClient, custom, events
 from telethon.sessions import StringSession
-from pyrogram.types import InlineKeyboardButton
+from pyogram.types import InlineKeyboardButton
 
 load_dotenv("config.env")
 
