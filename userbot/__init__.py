@@ -421,7 +421,7 @@ with bot:
                                 "⚜️Creator🔰", url=f"https://t.me/Alvin_junior"),],
                         [
                             InlineKeyboardButton(
-                                "☠️ Alvin-UserBot ☠️", url=f"https://github.com/fahrial2310/Alvin-Userbot"),],
+                                "☠️ Alvin-UserBot ☠️", url=f"https://github.com/fahrial2310/Alvin-UserBot"),],
                         [
                             InlineKeyboardButton(
                                 "☠️ Group Support", url=f"https://t.me/Alvin_image_editor_Group"),
@@ -432,7 +432,7 @@ with bot:
                                 "☠️ Deploy To Heroku ☠️", url=f"https://heroku.com/deploy?template=https://github.com/fahrial2310/Alvin-UserBot/tree/Alvin-UserBot"),],
                         [
                             InlineKeyboardButton(
-                                "Need Help To Deploy?", url=f"https://github.com/fahrial2310/Alvin-UserBot/blob/Alvin-UserBot/NeedHelpToDeploy%3F"),
+                                "Need Help To Deploy?", url=f"https://github.com/fahrial2310/Alvin-UserBot/blob/Alvin-UserBot/NeedHelpToDeploy%3F"),],
                     ],
                     link_preview=False,
                 )
