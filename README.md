@@ -4,8 +4,8 @@
 ![Alvin Userbot Logo](https://telegra.ph/file/531dad90833db07c98b33.jpg)
 
 <p align="center">
-  <a href="https://github.com/fahrial2310/Alvin-Userbot/fork">
-    <img src="https://img.shields.io/github/forks/fahrial2310/Alvin-Userbot?label=Fork&style=social">
+  <a href="https://github.com/fahrial2310/Alvin-UserBot/fork">
+    <img src="https://img.shields.io/github/forks/fahrial2310/Alvin-UserBot?label=Fork&style=social">
     
   </a>
   <a href="https://github.com/fahrial2310/Alvin-Userbot">
