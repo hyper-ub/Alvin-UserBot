@@ -44,6 +44,6 @@ CMD_HELP.update({
     \nUsage: alive bot.\
     \n\n;sadboy\
     \nUsage: hiks\
-    \n\n;excuseme ; ;monitoring\
-    \nUsage: try it.\"
+    \n\n;excuseme | ;monitoring\
+    \nUsage: try it."
 })
