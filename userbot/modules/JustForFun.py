@@ -403,7 +403,7 @@ async def _(event):
 @bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
 async def _(event):
 
-    if event.fwd_from:;
+    if event.fwd_from:
         return
 
     animation_interval = 1
@@ -883,7 +883,7 @@ async def _(event):
     await event.edit("------------✈-")
     await event.edit("-------------✈")
     await event.edit("Hello,i'm alien")
-    await asyncio.sleep(10)
+    await asyncio.sleep(50)
     await event.delete()
 
 
@@ -1201,7 +1201,7 @@ async def _(event):
             "What The",
             "What The Fu*k",
             "What The Fu*k Bruh",
-            "What The Fu*k Bruh\nhttps://telegra.ph//file/f3b760e4a99340d331f9b.jpg"
+            "WTF"
         ]
 
         for i in animation_ttl:
