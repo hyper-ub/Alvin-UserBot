@@ -100,7 +100,7 @@ async def _(event):
             await event.client.delete_messages(response.message.message)
 
 
-@register(outgoing=True, pattern=r"^\cc(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\;cc(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
