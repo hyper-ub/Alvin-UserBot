@@ -1,6 +1,6 @@
 FROM koala21/kampangbot:buster
 
-RUN git clone -b Alvin-Userbot https://github.com/fahrial2310/Alvin-Userbot /root/userbot
+RUN git clone -b Alvin-UserBot https://github.com/fahrial2310/Alvin-UserBot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
