@@ -3,7 +3,7 @@
 import os
 import time
 import re
-import pyogram
+import pyrogram
 
 from sys import version_info
 from logging import basicConfig, getLogger, INFO, DEBUG
@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 from requests import get
 from telethon.sync import TelegramClient, custom, events
 from telethon.sessions import StringSession
-from pyogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardButton
 
 load_dotenv("config.env")
 
