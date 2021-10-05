@@ -3,6 +3,7 @@
 import os
 import time
 import re
+import pyogram
 
 from sys import version_info
 from logging import basicConfig, getLogger, INFO, DEBUG
