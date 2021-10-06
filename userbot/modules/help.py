@@ -26,7 +26,7 @@ async def help(Alvin):
                         "`lastfm` | `locks` | `master` | `aeshtetic` | `detect` | `mastergame` | `helpers` | `hazmat`\n\n"
                         "`instagram` | `impostor` | `memes` | `misc` | `app` | `undelete` | `grab` | `clone`\n\n"
                         "`randomprofil` | `song` | `tiny` | `tempmail` | `tiktok` | `wordcloud`\n\n" 
-                        "`lyrics` | `mega` | `JustForFun` | `memify` | `mentions` | `purge` | `purgeme` | `del` | `edit`\n\n"
+                        "`lyrics` | `mega` | `justforfun` | `memify` | `mentions` | `purge` | `purgeme` | `del` | `edit`\n\n"
                         "`sd` | `random` | `sleep` | `shutdown` | `repo`  |`readme` | `repeat` | `restart`\n\n"
                         "`raw` | `nekobot` | `notes` | `off` | `phreaker` | `pm` | `profil` | `quotly`|  `rastick` | `resi` | `reverse` | `salam` | `sangmata`\n\n"
                         "`santet` | `image_search` | `currency` | `google`  `wiki`| `ud` | `tts` | `translate`| `youtube` | `rip`\n\n"
