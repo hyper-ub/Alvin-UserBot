@@ -112,7 +112,7 @@ async def pingme(pong):
                     f"%sms \n"
                     f"☠️ **Uptime:** "
                     f"{uptime} \n"
-                    f"**✦҈͜͡➳ My mASTER:** {ALIVE_NAME}" % (duration))
+                    f"**✦҈͜͡➳ MY MASTER:** {ALIVE_NAME}" % (duration))
 
 
 @register(outgoing=True, pattern="^;signal$")
@@ -129,7 +129,7 @@ async def pingme(pong):
     await pong.edit("**100% ██████████**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"- *M A S T E R* -\n"
+    await pong.edit(f"- **M A S T E R** -\n"
                     f"**• SɪGɴAʟ  :** "
                     f"%sms \n"
                     f"**• ᴏNʟIɴE  :** "
@@ -195,7 +195,7 @@ async def pingme(pong):
     await pong.edit("☀️PONG☀️")
     await pong.edit("☀️Ping☀️Pong☀️")
     end = datetime.now()
-    duration = (end - start).microseconds / 9000
+    duration = (end - start).seconds / 3
     await pong.edit("☠️ **Ping!**\n%sms" % (duration))
 
 CMD_HELP.update(
