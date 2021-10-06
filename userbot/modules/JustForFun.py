@@ -2973,7 +2973,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "JustForFun":
+    "justforfun":
     ";eye\
 \nUsage: See For Yourself.\
 \n\n;earth\
