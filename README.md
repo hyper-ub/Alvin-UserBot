@@ -27,3 +27,4 @@ Thank You So Much For
 
 *   [downgoo082](https://github.com/downgoo082) - Master-UserBot
 *   [bismillahfahriganteng](https://github.com/bismillahfahriganteng) - Skull-UserBot
+*   [zora24](https://github.com/zora24) - Lord-Userbot
