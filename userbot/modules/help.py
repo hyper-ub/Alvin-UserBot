@@ -13,7 +13,7 @@ async def help(Alvin):
         if args in CMD_HELP:
             await Alvin.edit(str(CMD_HELP[args]))
         else:
-            await Alvin.edit("**sorry master,i don't have that command,type ';help' ツ**")
+            await Alvin.edit("**sorry master,i don't have that command,type ;help ツ**")
             await asyncio.sleep(200)
             await Alvin.delete()
     else:
@@ -29,7 +29,7 @@ async def help(Alvin):
                         "`lyrics` | `mega` | `justforfun` | `memify` | `mentions` | `purge` | `purgeme` | `del` | `edit`\n\n"
                         "`sd` | `random` | `sleep` | `shutdown` | `repo`  |`readme` | `repeat` | `restart`\n\n"
                         "`raw` | `nekobot` | `notes` | `off` | `phreaker` | `pm` | `profil` | `quotly`|  `rastick` | `resi` | `reverse` | `salam` | `sangmata`\n\n"
-                        "`santet` | `image_search` | `currency` | `google`  `wiki`| `ud` | `tts` | `translate`| `youtube` | `rip`\n\n"
+                        "`santet` | `image_search` | `currency` | `google` | `wiki`| `ud` | `tts` | `translate`| `youtube` | `rip`\n\n"
                         "`removebg` | `ocr` | `qrcode` | `barcode` | `paste` | `getpaste` | `nekobin` | `direct` | `screenshot` | `sed` | `snips` | `spammer` | `spotifynow` | `ssvideo`\n\n"
                         "`stickers` | `stickers2` | `sysd` | `botver` | `pip` | `alive` | `tag_all` | `telegraph` | `timedate` | `torrent`\n\n" 
                         "`transform` | `updater` |`downloader` | `getid` | `waifu` | `wallpaper` | `weather`\n\n"
