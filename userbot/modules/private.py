@@ -28,7 +28,7 @@ DEF_UNAPPROVED_MSG = (
     "━━━━━━━━━━━━━━━━━\n"
     "__Hi there,i'm the keeper of this room chat and master still doesn't allow  you to place an order,wait until the master is back online and please don't spam, thank you. __\n"
     "━━━━━━━━━━━━━━━━━\n"
-    "╔   『◈Auto Messages◈』   ╗\n"
+    "╔   『◈Auto Messages◈』  ╗\n"
     f"╚ ◄By {DEFAULTUSER} ►╝\n"
     "┗━━━━━━━━━━━━━━━━━━━")
 # =================================================================
@@ -228,7 +228,7 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await apprvpm.edit("hi there,master accepted you to messages ツ")
+        return await apprvpm.edit(f"Hi there [{name0}](tg://user?id={uid}) your messages has been accepted ツ")
 
     await apprvpm.edit(f"Hi there [{name0}](tg://user?id={uid}) your messages has been accepted ツ")
     await apprvpm.delete(getmsg)
