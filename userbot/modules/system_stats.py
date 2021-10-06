@@ -225,17 +225,17 @@ async def amireallyalive(alive):
     output = (
         f" **┗┓ALVIN USERBOT┏┛** \n"
         f"\n__**{ALVIN_TEKS_CUSTOM}**__\n"
-        f"**━━━━━━━━━━━━━━━━━━━━**\n"
+        f"**━━━━━━━━━━━━━━━━**\n"
         f"**☠️ Master** \n"
-        f"  `{DEFAULTUSER}` \n"
+        f"  {DEFAULTUSER} \n"
         f"**☠️ Username** \n"
-        f"  `@{user.username}` \n"
-        f"┏━━━━━━━━━━━━━━━━━━━\n"
+        f"  @{user.username} \n"
+        f"┏━━━━━━━━━━━━━━━━\n"
         f"┣[• Telethon :Ver {version.__version__} \n"
         f"┣[• Python   :Ver {python_version()} \n"
         f"┣[• Bot Ver  :{BOT_VER} \n"
         f"┣[• Modules  :{len(modules)} Modules \n"
-        f"┗━━━━━━━━━━━━━━━━━━━")
+        f"┗━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -262,12 +262,12 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╔═════❙۩☠️۩❙═════╗**\n"
-        f"     **☠️ ALVIN USERBOT ☠️** \n\n"
+        f" **☠️ ALVIN USERBOT ☠️** \n\n"
         f"☠️ **Master**     \n    {DEFAULTUSER} \n"
         f"☠️ **Username** \n    @{user.username} \n"
         f"☠️ **Telethon** \n    Version {version.__version__} \n"
         f"☠️ **Python**   \n    Version {python_version()} \n"
-        f"☠️ **Bot Version**\n    {BOT_VER}`\n"
+        f"☠️ **Bot Version**\n    {BOT_VER}\n"
         f"☠️ **Module**    \n    {len(modules)} \n\n"
         f"☠️ **Repo Userbot:** [Alvin-Userbot](https://github.com/fahrial2310/Alvin-Userbot)\n☠️ **Group Userbot: **[press](t.me/Alvin_Userbot_Group)\n☠️ **Owner:** [Alvin Junior](t.me/Alvin_junior)\n"
         f"**╚═════❙۩☠️۩❙═════╝**")
@@ -299,7 +299,7 @@ async def amireallyalive(alive):
     await alive.edit("☠️")
     output = (
         f"**☠️ Alvin UserBot ☠️** \n\n"
-        f"┏━━━━━━━━━━━━━━━━━━━ \n"
+        f"┏━━━━━━━━━━━━━━━━\n"
         f"┣|☠️ Master     :{DEFAULTUSER} \n"
         f"┣|☠️ Username :@{user.username} \n"
         f"┣|☠️ Telethon :Ver {version.__version__} \n"
@@ -307,8 +307,8 @@ async def amireallyalive(alive):
         f"┣|☠️ Branch   :{UPSTREAM_REPO_BRANCH} \n"
         f"┣|☠️ Bot Ver  :{BOT_VER} \n"
         f"┣|☠️ Modules  :{len(modules)} Modules \n"
-        f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
-        f"[☠️ Repo](https://github.com/fahrial2310/Alvin-Userbot) | [Group Support](t.me/Alvin_Userbot_Group) | [Owner](t.me/Alvin_junior)")
+        f"┗━━━━━━━━━━━━━━━━\n\n"
+        f"☠️[Repo](https://github.com/fahrial2310/Alvin-Userbot) | [Group Support](t.me/Alvin_Userbot_Group) | [Owner](t.me/Alvin_junior)☠️")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -361,7 +361,7 @@ CMD_HELP.update({"botver": ";botver\
 CMD_HELP.update({"pip": ";pip <module(s)>\
      \nExplanation: Perform a pip module search."})
 
-CMD_HELP.update({"alive": ";alive | ;on`\
+CMD_HELP.update({"alive": ";alive | ;on\
      \nExplanation: Type ;alive/;on to see if your bot is working or not.\
      \n\n;alive <text>\
      \nExplanation: Change 'user' to any text you want.\
