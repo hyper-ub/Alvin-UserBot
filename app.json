@@ -151,12 +151,13 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "hi there,i'm use Alvin-UserBot ",
+      "value": "Hi There,I'M Use Alvin-UserBot ",
       "required": false
     },
     "ALIVE_NAME": {
       "description": "name to see ;alive",
-      "required": false
+      "value"": "",
+      "required": true
     },
     "ALVIN_TEKS_CUSTOM": {
       "description": "custom alive text(random)",
@@ -216,11 +217,11 @@
     },
     "BOT_TOKEN": {
       "description": "Set this to enable inline bot helper. get the token from @BotFather",
-      "required": false
+      "required": true
     },
     "BOT_USERNAME": {
       "description": "Username of the bot you created with @BotFather",
-      "required": false
+      "required": true
     }
   },
   "addons": [
