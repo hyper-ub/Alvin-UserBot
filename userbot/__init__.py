@@ -99,7 +99,7 @@ UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
     "https://github.com/fahrial2310/Alvin-UserBot.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Alvin-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Alvin-UserBot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -163,7 +163,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Alvin-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Alvin-UserBot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "4.0")
@@ -386,7 +386,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("Alvin-Userbot, build your UserBot it self [Click Here](https://github.com/fahrial2310/Alvin-Userbot.git)")
+                await event.reply("Alvin-UserBot, build your UserBot it self [Click Here](https://github.com/fahrial2310/Alvin-UserBot.git)")
             else:
                 await event.reply(f"`My Master {ALIVE_NAME}\n\nHow Are You?`")
 
@@ -400,7 +400,7 @@ with bot:
                 result = builder.article(
                     "please use .help for command!!",
                     text="{}\n\n**☠️ this is module i have:** `{}`\n               \n**☠️ list module of Alvin-UserBot:** \n".format(
-                        "**☠️Alvin-Userbot☠️**",
+                        "**☠️Alvin-UserBot☠️**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -471,7 +471,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Please Deploy Your Own Alvin-Userbot, Don't Use Alvin's {ALIVE_NAME} ツ"
+                reply_pop_up_alert = f"Please Deploy Your Own Alvin-UserBot, Don't Use Alvin's {ALIVE_NAME} ツ"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -502,7 +502,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"Please Deploy Your Own Alvin-Userbot, Don't Use Alvin's {ALIVE_NAME} ツ"
+                reply_pop_up_alert = f"Please Deploy Your Own Alvin-UserBot, Don't Use Alvin's {ALIVE_NAME} ツ"
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
