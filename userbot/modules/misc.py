@@ -59,7 +59,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^;shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Alvin-Userbot....`")
+    await event.edit("`shuting down Alvin-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
