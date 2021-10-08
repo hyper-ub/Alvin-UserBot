@@ -23,7 +23,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     "╔══════════╗ ╔═════════╗\n"
-    "║ Alvin-UserBot╚ ╗ROOM CHAT ║\n"
+    "║ Alvin-UserBot ╚ ╗ROOM CHAT  ║\n"
     "╚══════════╝ ╚═════════╝\n"
     "━━━━━━━━━━━━━━━━━\n"
     "__Hi there,i'm the keeper of this room chat and master still doesn't allow  you to place an order,wait until the master is back online and please don't spam, thank you. __\n"
