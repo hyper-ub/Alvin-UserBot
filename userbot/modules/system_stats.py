@@ -222,6 +222,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     await alive.edit("I'M ALIVE!")
     await alive.edit("☠️")
+    await asyncio.sleep(2)
     output = (
         f" **┗┓ALVIN USERBOT┏┛** \n"
         f"\n__**{ALVIN_TEKS_CUSTOM}**__\n"
@@ -297,6 +298,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     await alive.edit("I'M ALIVE!")
     await alive.edit("☠️")
+    await asyncio.sleep(2)
     output = (
         f"**☠️ Alvin UserBot ☠️** \n\n"
         f"┏━━━━━━━━━━━━━━━━\n"
