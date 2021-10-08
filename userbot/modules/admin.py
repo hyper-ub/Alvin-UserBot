@@ -576,11 +576,11 @@ async def rm_deletedacc(show):
         )
 
 
-@register(outgoing=True, pattern=r"^\.admins$")
+@register(outgoing=True, pattern=r"^\;admins$")
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "Grup Ini"
-    mentions = f"<b>⚜️list admin in group🔰 {title}:</b> \n"
+    mentions = f"<b>⚜️list admin in group🔰\n{title}:</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
