@@ -2,8 +2,8 @@ import json
 
 import requests
 
-from userbot import CMD_HELP
-from userbot.events import register
+from FahriUserBot import CMD_HELP
+from FahriUserBot.events import register
 
 PLACE = ""
 
