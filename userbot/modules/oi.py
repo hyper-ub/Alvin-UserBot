@@ -2,15 +2,15 @@ from time import sleep
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^;alvin(?: |$)(.*)')
+@register(outgoing=True, pattern='^;whoiam(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(3)
-    await typew.edit("Hi my name is..._unknown identity_")
+    await typew.edit("Hi my name is...YNTKTS")
     sleep(3)
-    await typew.edit("_unknown years old_")
+    await typew.edit("years old.....YNTKTS")
     sleep(1)
-    await typew.edit("_unknown place_,error, master identity not found:)")
+    await typew.edit("__master identity not found__")
     #dont edit or remove
 
 
