@@ -159,7 +159,7 @@ async def keep_read(message):
 regexNinja = False
 
 
-@register(outgoing=True, pattern="^s/")
+@register(outgoing=True, pattern="^;s/")
 async def sedNinja(event):
     """Untuk Modul Regex-Ninja, Perintah Hapus Otomatis Yang Dimulai Dengans/"""
     if regexNinja:
@@ -320,9 +320,9 @@ async def fetch_info(chat, event):
     caption = "<b>CHAT INFORMATION:</b>\n"
     caption += f"ID: <code>{chat_obj_info.id}</code>\n"
     if chat_title is not None:
-        caption += f"{chat_type} Nama: {chat_title}\n"
+        caption += f"{chat_type} Name: {chat_title}\n"
     if former_title is not None:  # Meant is the very first title
-        caption += f"Nama Lama: {former_title}\n"
+        caption += f"Old Name: {former_title}\n"
     if username is not None:
         caption += f"{chat_type} Type: Public\n"
         caption += f"Link: {username}\n"
@@ -382,7 +382,7 @@ async def fetch_info(chat, event):
     if hasattr(chat_obj_info, "scam") and chat_obj_info.scam:
         caption += "Scam: <b>Yes</b>\n\n"
     if hasattr(chat_obj_info, "verified"):
-        caption += f"Di Verification by Telegram: {verified}\n\n"
+        caption += f"Verification by Telegram: {verified}\n\n"
     if description:
         caption += f"Description: \n<code>{description}</code>\n"
     return caption
