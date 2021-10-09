@@ -156,7 +156,6 @@
     },
     "ALIVE_NAME": {
       "description": "name to see ;alive",
-      "value"": "",
       "required": true
     },
     "ALVIN_TEKS_CUSTOM": {
