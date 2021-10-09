@@ -20,7 +20,7 @@ from userbot.modules.admin import get_user_from_event
 from telethon.utils import pack_bot_file_id
 
 
-@register(outgoing=True, pattern="^;getid(?: |$)(.*)")
+@register(outgoing=True, pattern="^;id(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
