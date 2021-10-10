@@ -19,6 +19,8 @@ from userbot import (
     UPSTREAM_REPO_URL,
     UPSTREAM_REPO_BRANCH)
 from userbot.events import register
+from telethon import __version__, version
+from platform import python_version
 
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), 'requirements.txt')
