@@ -92,15 +92,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("Lord-Userbot Successfully Deployed!\n" "Restarting, Please Wait Master.....")
+            await event.edit("Alvin-Userbot Successfully Deployed!\n" "Restarting, Please Wait Master.....")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n"
-                f"**Alvin-Userbot Has Been Updated**\n\n┏━━━━━━━━━━━━━━━━\n┣[• Telethon :Ver {version.__version__} \n┣[• Python   :Ver {python_version()} \n┣[• Bot Ver  :{BOT_VER} \n┣[• Modules  :{len(modules)} Modules \n┗━━━━━━━━━━━━━━━━")
-
+                BOTLOG_CHATID, "#UPDATE \n"
+                "**Alvin-Userbot Has Been Updated**")
     else:
         await event.edit('[HEROKU]:'
                          '\nPlease Prepare Variable **HEROKU_API_KEY** .'
@@ -126,8 +125,8 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n"
-            f"**Alvin-Userbot Has Been Updated**\n\n┏━━━━━━━━━━━━━━━━\n┣[• Telethon :Ver {version.__version__} \n┣[• Python   :Ver {python_version()} \n┣[• Bot Ver  :{BOT_VER} \n┣[• Modules  :{len(modules)} Modules \n┗━━━━━━━━━━━━━━━━")
+            BOTLOG_CHATID, "#UPDATE \n"
+            f"**Alvin-Userbot Has Been Updated**")
         await asyncio.sleep(100)
         await event.delete()
 
