@@ -185,7 +185,7 @@ async def dyno_usage(dyno):
                 f"{AppMinutes} minutes  -  {AppPercentage}%**"
                 "\n ✲━─━─━─━─━─━─━─━─━─━✲\n"
                 "☠️ reaminder dyno in this month:\n"
-                f"  ☠️ **{hours} Jam - {minutes} minutes  "
+                f"  ☠️ **{hours} Hour - {minutes} minutes  "
                 f"-  {percentage}%**\n"
                 "╰━┷━━━━━━━━━━━━━━━━┷━╯"
             )
