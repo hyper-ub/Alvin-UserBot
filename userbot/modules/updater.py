@@ -119,7 +119,7 @@ async def update(event, repo, ups_rem, ac_br):
     await asyncio.sleep(1)
     await event.edit('**☠️ Alvin-Userbot ☠️** Restarted....')
     await asyncio.sleep(1)
-    await event.edit('Please Wait A Few Seconds Lord ツ')
+    await event.edit('Please Wait A Few Seconds Master ツ')
     await asyncio.sleep(10)
     await event.delete()
 
