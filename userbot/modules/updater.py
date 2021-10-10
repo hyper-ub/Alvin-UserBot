@@ -11,6 +11,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 from userbot import (
     BOTLOG,
+    BOT_VER,
     BOTLOG_CHATID,
     CMD_HELP,
     HEROKU_API_KEY,
@@ -98,7 +99,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "Alvin-Userbot Has Been Updated")
+                f"**Alvin-Userbot Has Been Updated**\n\n┏━━━━━━━━━━━━━━━━\n┣[• Telethon :Ver {version.__version__} \n┣[• Python   :Ver {python_version()} \n┣[• Bot Ver  :{BOT_VER} \n┣[• Modules  :{len(modules)} Modules \n┗━━━━━━━━━━━━━━━━")
 
     else:
         await event.edit('[HEROKU]:'
@@ -126,7 +127,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**Alvin-Userbot Has Been Updated ツ**")
+            f"**Alvin-Userbot Has Been Updated**\n\n┏━━━━━━━━━━━━━━━━\n┣[• Telethon :Ver {version.__version__} \n┣[• Python   :Ver {python_version()} \n┣[• Bot Ver  :{BOT_VER} \n┣[• Modules  :{len(modules)} Modules \n┗━━━━━━━━━━━━━━━━")
         await asyncio.sleep(100)
         await event.delete()
 
