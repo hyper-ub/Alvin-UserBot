@@ -21,9 +21,9 @@ async def yardim(event):
             await event.delete()
         else:
             await event.edit(
-                "**The bot doesn't work! Please set the Bot Token and Username correctly. The module has been stopped.**"
+                "__The bot doesn't work! Please set the Bot Token and Username correctly. The module has been stopped.__"
             )
     except Exception:
         return await event.edit(
-            "**You cannot send inline results in this chat (caused by SendInlineBotResultRequest)**"
+            "__You cannot send inline results in this chat (caused by SendInlineBotResultRequest)__"
         )
