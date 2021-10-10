@@ -48,7 +48,7 @@ from userbot.utils import chrome, googleimagesdownload, options, progress
 
 CARBONLANG = "auto"
 TTS_LANG = "en"
-TRT_LANG = "en"
+TRT_LANG = "id"
 TEMP_DOWNLOAD_DIRECTORY = "/root/userbot/.bin"
 
 
@@ -353,7 +353,7 @@ async def _(event):
     elif "|" in input_str:
         lan, text = input_str.split("|")
     else:
-        await event.edit("`.tr LanguageCode` as reply to a message")
+        await event.edit("`;tr LanguageCode` as reply to a message")
         return
     text = emoji.demojize(text.strip())
     lan = lan.strip()
