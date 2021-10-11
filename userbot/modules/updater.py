@@ -56,7 +56,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '[HEROKU]: Please Set Up Variable **HEROKU_APP_NAME** '
-                ' to be able to deploy the latest changes from Alvin Userbot.'
+                ' to be able to deploy the latest changes from Alvin UserBot.'
             )
             repo.__del__()
             return
@@ -66,11 +66,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\nInvalid Heroku credentials for deploying Alvin Userbot dyno.'
+                f'{txt}\nInvalid Heroku credentials for deploying Alvin UserBot dyno.'
             )
             return repo.__del__()
         await event.edit('[HEROKU]:'
-                         '\nDyno Alvin-Userbot is in progress, please wait 7-8 minutes'
+                         '\nDyno Alvin-UserBot is in progress, please wait 7-8 minutes'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -94,14 +94,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("Alvin-Userbot Successfully Deployed!\n" "Restarting, Please Wait Master.....")
+            await event.edit("Alvin-UserBot Successfully Deployed!\n" "Restarting, Please Wait Master.....")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#UPDATE \n"
-                f"**Alvin-Userbot Has Been Updated**\n\n┏━━━━━━━━━━━━━━━━\n┣[• Telethon :Ver {version.version} \n┣[• Python   :Ver {python_version()} \n┣[• Bot Ver  :{BOT_VER} \n┣[• Modules  :{len(modules)} Modules \n┗━━━━━━━━━━━━━━━━")
+                f"**Alvin-UserBot Has Been Updated**\n\n┏━━━━━━━━━━━━━━━━\n┣[• Telethon :Ver {version.version} \n┣[• Python   :Ver {python_version()} \n┣[• Bot Ver  :{BOT_VER} \n┣[• Modules  :{len(modules)} Modules \n┗━━━━━━━━━━━━━━━━")
     else:
         await event.edit('[HEROKU]:'
                          '\nPlease Prepare Variable **HEROKU_API_KEY** .'
@@ -117,9 +117,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**☠️ Alvin-Userbot ☠️** Has Been Updated!')
+    await event.edit('**☠️ Alvin-UserBot ☠️** Has Been Updated!')
     await asyncio.sleep(1)
-    await event.edit('**☠️ Alvin-Userbot ☠️** Restarted....')
+    await event.edit('**☠️ Alvin-UserBot ☠️** Restarted....')
     await asyncio.sleep(1)
     await event.edit('Please Wait A Few Seconds Master ツ')
     await asyncio.sleep(10)
@@ -128,7 +128,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#UPDATE \n"
-            f"**Alvin-Userbot Has Been Updated**\n\n┏━━━━━━━━━━━━━━━━\n┣[• Telethon :Ver {version.version} \n┣[• Python   :Ver {python_version()} \n┣[• Bot Ver  :{BOT_VER} \n┣[• Modules  :{len(modules)} Modules \n┗━━━━━━━━━━━━━━━━")
+            f"**Alvin-UserBot Has Been Updated**\n\n┏━━━━━━━━━━━━━━━━\n┣[• Telethon :Ver {version.version} \n┣[• Python   :Ver {python_version()} \n┣[• Bot Ver  :{BOT_VER} \n┣[• Modules  :{len(modules)} Modules \n┗━━━━━━━━━━━━━━━━")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -190,7 +190,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n**☠️ Alvin-Userbot is the latest version**\n')
+            f'\n**☠️ Alvin-UserBot is the latest version**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
@@ -210,18 +210,18 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Command To Update Alvin Userbot**\n >;update now\n >;update deploy\n\n__To Update Latest Features From Alvin Userbot.__')
+        return await event.respond('**Command To Update Alvin UserBot**\n >;update now\n >;update deploy\n\n__To Update Latest Features From Alvin Userbot.__')
 
     if force_update:
         await event.edit(
             'Force Sync To Latest Stable Userbot Code Please Wait .....')
     else:
-        await event.edit('☠️ Alvin-Userbot Update Process, Loading....1%')
-        await event.edit('☠️ Alvin-Userbot Update Process, Loading....20%')
-        await event.edit('☠️ Alvin-Userbot Update Process, Loading....35%')
-        await event.edit('☠️ Alvin-Userbot Update Process, Loading....77%')
-        await event.edit('☠️ Alvin-Userbot Update Process, Updating...90%')
-        await event.edit('☠️ Alvin-Userbot Update Process, please wait master....100%')
+        await event.edit('☠️ Alvin-UserBot Update Process, Loading....1%')
+        await event.edit('☠️ Alvin-UserBot Update Process, Loading....20%')
+        await event.edit('☠️ Alvin-UserBot Update Process, Loading....35%')
+        await event.edit('☠️ Alvin-UserBot Update Process, Loading....77%')
+        await event.edit('☠️ Alvin-UserBot Update Process, Updating...90%')
+        await event.edit('☠️ Alvin-UserBot Update Process, please wait master....100%')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
@@ -236,9 +236,9 @@ async def upstream(event):
 CMD_HELP.update({
     'updater':
     ";update"
-    "\nUsage: To View Latest Alvin-Userbot Updates."
+    "\nUsage: To View Latest Alvin-UserBot Updates."
     "\n\n;update now"
-    "\nUsage: Updating Alvin-Userbot."
+    "\nUsage: Updating Alvin-UserBot."
     "\n\n;update deploy"
-    "\nUsage: Updating Alvin-Userbot By Re-Deploy."
+    "\nUsage: Updating Alvin-UserBot By Re-Deploy."
 })
