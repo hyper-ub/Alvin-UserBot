@@ -13,7 +13,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -93,7 +93,7 @@ async def _(event):
 """Available Commands: .gift"""
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -136,7 +136,7 @@ async def _(event):
             await event.edit(animation_chars[i % 17])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -176,7 +176,7 @@ async def _(event):
             await event.edit(animation_chars[i % 12])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -212,7 +212,7 @@ async def _(event):
             await event.edit(animation_chars[i % 103])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -251,7 +251,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -289,7 +289,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -328,7 +328,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -367,7 +367,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -400,7 +400,7 @@ async def _(event):
             await event.edit(animation_chars[i % 7])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -473,7 +473,7 @@ async def _(event):
         await event.edit("EVERyBOdy wAs GanGeSTar UNtIL I ArRivEd 😎😎😎")
 
 
-@bot.on(events.NewMessage(pattern=r";.(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r".(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -510,7 +510,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -551,7 +551,7 @@ async def _(event):
             await event.edit(animation_chars[i % 15])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -592,7 +592,7 @@ async def _(event):
             await event.edit(animation_chars[i % 15])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -753,7 +753,7 @@ async def _(event):
             await event.edit(animation_chars[i % 549755813888])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -790,7 +790,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -826,7 +826,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -887,7 +887,7 @@ async def _(event):
     await event.delete()
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -959,7 +959,7 @@ async def _(message):
                 return
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -1008,7 +1008,7 @@ async def _(event):
             await event.edit(animation_chars[i % 20])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -1052,7 +1052,7 @@ async def _(event):
             await event.edit(animation_chars[i % 17])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -1133,7 +1133,7 @@ async def _(event):
             await event.edit(animation_chars[i % 27])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -1187,7 +1187,7 @@ async def _(event):
             await event.edit(animation_chars[i % 72])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -1210,7 +1210,7 @@ async def _(event):
             await event.edit(animation_chars[i % 5])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -1247,7 +1247,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -1693,7 +1693,7 @@ async def _(event):
         await event.edit("`\"If we put solar panels above parking lots, then our cars wouldn't get hot and we would have a lot of clean energy.\"`")
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -1989,7 +1989,7 @@ async def _(event):
         await event.edit("`\"What’s something you misunderstood as a child and only realized much later was wrong?\"`")
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2026,7 +2026,7 @@ async def _(event):
             await event.edit(animation_chars[i % 4])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2063,7 +2063,7 @@ async def _(event):
             await event.edit(animation_chars[i % 4])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2100,7 +2100,7 @@ async def _(event):
             await event.edit(animation_chars[i % 4])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2137,7 +2137,7 @@ async def _(event):
             await event.edit(animation_chars[i % 4])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2174,7 +2174,7 @@ async def _(event):
             await event.edit(animation_chars[i % 4])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2224,7 +2224,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2264,7 +2264,7 @@ async def _(event):
             await event.edit(animation_chars[i % 6])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2304,7 +2304,7 @@ async def _(event):
             await event.edit(animation_chars[i % 6])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2358,7 +2358,7 @@ async def _(event):
             await event.edit(animation_chars[i % 14])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2410,7 +2410,7 @@ async def _(event):
             await event.edit(animation_chars[i % 13])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2451,7 +2451,7 @@ async def _(event):
             await event.edit(animation_chars[i % 15])
 
 
-@bot.on(events.NewMessage(pattern=r"\;(;*)", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
     if event.fwd_from:
@@ -2974,67 +2974,68 @@ async def _(event):
 
 CMD_HELP.update({
     "justforfun":
-    ";eye\
+    ".eye\
 \nUsage: See For Yourself.\
 \n\n;earth\
 \nusage: Rotating the Earth \
 \n\n;bombs\
 \nUsage: Telegram Bomb🤣🤣\
-\n\n;think\
+\n\n.think\
 \nUsage: hmmm thinking\
-\n\n;gotm or ;got\
+\n\n;gotm or ;gott\
 \nUsage: get sucks🤣\
 \n\n;snakes\
 \nUsage: See For Yourself\
 \n\n;call\
 \nUsage: Calling Telegram Owner \
-\n\n;bello or cell phone or suits\
+\n\n;belo or cell phone or suits\
 \nUsage: Kinds of Interesting Commands\
-\n\n;admeme\
+\n\n.admeme\
 \nUsage: memememe\
 \n\n;qs\
 \nUsage: Starting a Conversation\
-\n\n;wtf\
+\n\n.wtf\
 \nUsage: See For Yourself\
-\n\n;load,;up,;square,;round,;heart,;monkey,;anihand,;fnl,;cnt,;kiss\
+\n\n.load,.up,.square,.round,.heart,.monkey,.anihand,.fnl,.cnt,;kiss\
 \nUsage: See For Yourself\
-\n\n;human\
+\n\n.human\
 \nUsage: Nothing Interesting\
-\n\n;wupload\
+\n\n.wupload\
 \nUsage: meh\
-\n\n;music\
+\n\n.music\
 \nUsage: music player\
-\n\n;fleave\
+\n\n.fleave\
 \nUsage: Get out of bed\
-\n\n;fadmin\
+\n\n.fadmin\
 \nUsage: Become a Fake Admin \
-\n\n;gift\
+\n\n.gift\
 \nUsage: Giving Gifts But I Don't Want Members to Know What's Inside!\
-\n\n;police\
+\n\n.police\
 \nUsage: Time To Jail.\
-\n\n;kill\
+\n\n.kill\
 \nUsage: To Kill Enemies Online:v\
-\n\n;os\
+\n\n.os\
 \nUsage: See For Yourself.\
-\n\n;isro\
+\n\n.isro\
 \nUsage: To Summon Alien \
 \n\n;gangstar\
 \nUsage: You Become a Gangstar.\
-\n\n;hacks\
+\n\n.hack\
 \nUsage: To Hack Telegram:v\
-\n\n; dump\
+\n\n;dump\
 \nUsage: xD\
-\n\n;hypnotize\
+\n\n.hypnotize\
 \nUsage: Ah Damn My Eyes \
-\n\n;whatsapp\
+\n\n.whatsapp\
 \nUsage: To Hack Whatsapp:v \
-\n\n;solar\
+\n\n.solar\
 \nUsage: Our Beautiful Solar System \
-\n\n;quickheal or ;sqh or ;vquickheal\
+\n\n.quickheal or .sqh or .vquickheal\
 \nUsage: Virus Found, Remove It Using This:v\
 \n\n;plane\
 \nUsage: To Get Around One Place✈️\
-\n\n;jio\
+\n\n.jio\
 \nUsage: Is Your Network Slow?? Boost Using This\
-\n\n\n Have fun friends :v"
+\n\n\n Have fun friends :v\
+\n\n\n Some cmd use (.) and (;)
 })
