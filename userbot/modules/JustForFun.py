@@ -3037,5 +3037,5 @@ CMD_HELP.update({
 \n\n.jio\
 \nUsage: Is Your Network Slow?? Boost Using This\
 \n\n\n Have fun friends :v\
-\n\n\n Some cmd use (.) and (;)
+\n\n\n Some cmd use (.) and (;)"
 })
