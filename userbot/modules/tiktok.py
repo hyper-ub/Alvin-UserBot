@@ -5,7 +5,7 @@ from userbot.events import register
 # Alvin Gans
 
 
-@register(outgoing=True, pattern="^;tiktok(?: |$)(.*)")
+@register(outgoing=True, pattern="^;tt(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
