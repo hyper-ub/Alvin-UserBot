@@ -18,7 +18,9 @@ import barcode
 import asyncurban
 from barcode.writer import ImageWriter
 import emoji
-from googletrans import Translator
+from google_trans_new import google_translator
+from googletrans import LANGUAGES
+from langdetect import detect
 from time import sleep
 from re import findall
 from selenium import webdriver
@@ -353,25 +355,28 @@ async def _(event):
     elif "|" in input_str:
         lan, text = input_str.split("|")
     else:
-        await event.edit("`;tr LanguageCode` as reply to a message")
+        await event.edit("`.tr LanguageCode` as reply to a message")
         return
-    text = emoji.demojize(text.strip())
+
     lan = lan.strip()
-    translator = Translator()
     try:
-        translated = translator.translate(text, dest=lan)
-        after_tr_text = translated.text
-        # TODO: emojify the :
-        # either here, or before translation
-        output_str = """**TRANSLATED** from {} to {}
-{}""".format(
-            translated.src,
-            lan,
-            after_tr_text
-        )
-        await event.edit(output_str)
+        translator = google_translator()
+        translated = translator.translate(text, lang_tgt=lan)
+        lmao = detect(text)
+        after_tr_text = lmao
+        source_lan = LANGUAGES[after_tr_text]
+        transl_lan = LANGUAGES[lan]
+        output_str = f"""**TRANSLATED SUCCESSFULLY**
+**Source ({source_lan})**:
+`{text}`
+**Translation ({transl_lan})**:
+`{translated}`"""
+       await event.edit(output_str)
     except Exception as exc:
         await event.edit(str(exc))
+
+
+    
 
 
 @register(pattern=";lang (tr|tts) (.*)", outgoing=True)
