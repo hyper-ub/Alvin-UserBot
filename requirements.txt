@@ -3,6 +3,8 @@ aiohttp
 aiofiles
 aria2p
 async_generator
+google_trans_new
+langdetect
 cowpy
 psutil
 wget
