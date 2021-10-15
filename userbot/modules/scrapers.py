@@ -371,7 +371,7 @@ async def _(event):
 `{text}`
 **Translation ({transl_lan})**:
 `{translated}`"""
-       await event.edit(output_str)
+        await event.edit(output_str)
     except Exception as exc:
         await event.edit(str(exc))
 
